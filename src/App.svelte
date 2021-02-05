@@ -1,4 +1,7 @@
 <script>
+  // I import my component
+  import About from "./components/About.svelte";
+
   export let name, lastName;
   // Para todo uso let, en este caso para guardar un string
   let svelteLogo = "https://arepa.s3.amazonaws.com/svelte-logo.png";
@@ -6,7 +9,7 @@
 
 <main>
   <h1>Hello {name} {lastName}!</h1>
-  <p>Frontend Developer</p>
+  <About />
   <!-- Añado una imagen -->
   <img src={svelteLogo} alt="Svelte" />
 </main>
@@ -24,11 +27,6 @@
     --theme-color: purple;
   }
 
-  /* Establezco el color con base a la variable global, con la palabra reservada var */
-  p {
-    color: var(--theme-color);
-    font-size: 22px;
-  }
   main {
     text-align: center;
     padding: 1em;
