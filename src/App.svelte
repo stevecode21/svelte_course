@@ -5,6 +5,7 @@
   import Text from "./components/Text.svelte";
   // Import my Person component
   import Person from "./components/Person.svelte";
+  import Skills from "./components/Skills.svelte";
 
   export let name, lastName;
   // Para todo uso let, en este caso para guardar un string
@@ -26,7 +27,8 @@
   <Text />
   <!-- Pass props to my component -->
   <Person {...data} />
-  <!-- Añado una imagen -->
+  <Skills />
+  <!-- Add an image -->
   <img src={svelteLogo} alt="Svelte" />
 </main>
 
