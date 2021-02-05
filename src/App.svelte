@@ -13,6 +13,7 @@
 
 <style>
   /* Este estilo aplicará en toda la app */
+
   :global(body) {
     background-color: #f2eee2;
     color: #0084f6;
