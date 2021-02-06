@@ -5,6 +5,10 @@
   import Text from "./components/Text.svelte";
   // Import my Person component
   import Person from "./components/Person.svelte";
+  import Skills from "./components/Skills.svelte";
+  import Input from "./components/Input.svelte";
+  import Photos from "./components/Photos.svelte";
+  import ButtonCount from "./components/ButtonCount.svelte";
 
   export let name, lastName;
   // Para todo uso let, en este caso para guardar un string
@@ -26,13 +30,26 @@
   <Text />
   <!-- Pass props to my component -->
   <Person {...data} />
-  <!-- Añado una imagen -->
+  <Skills />
+  <!-- Input component -->
+  <Input />
+  <!-- Button uses svelte store -->
+  <ButtonCount />
+  <!-- Photos component -->
+  <Photos />
+  <!-- Add an image -->
   <img src={svelteLogo} alt="Svelte" />
 </main>
 
 <style>
   /* Este estilo aplicará en toda la app */
 
+  /* Global class for darkmode */
+  :global(body.dark-mode) {
+    background-color: #1d3040;
+    color: #bfc2c7;
+    --theme-color: #fff;
+  }
   :global(body) {
     background-color: #f2eee2;
     color: #0084f6;
