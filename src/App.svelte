@@ -8,6 +8,7 @@
   import Skills from "./components/Skills.svelte";
   import Input from "./components/Input.svelte";
   import Photos from "./components/Photos.svelte";
+  import ButtonCount from "./components/ButtonCount.svelte";
 
   export let name, lastName;
   // Para todo uso let, en este caso para guardar un string
@@ -32,6 +33,8 @@
   <Skills />
   <!-- Input component -->
   <Input />
+  <!-- Button uses svelte store -->
+  <ButtonCount />
   <!-- Photos component -->
   <Photos />
   <!-- Add an image -->
