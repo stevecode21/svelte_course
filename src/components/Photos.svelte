@@ -5,7 +5,6 @@
 
   // inside of onmount I'm gonna create an async function to get data frm API
   onMount(async () => {
-    console.log("onMount");
     const response = await fetch(
       "https://jsonplaceholder.typicode.com/photos?_limit=20"
     );
